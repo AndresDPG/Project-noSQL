@@ -1,33 +1,38 @@
 # Project-noSQL
 Project noSQL
 
+## Arquitectura implementada en la base de datos:
+  * 1 servidor mongos
+  * 1 servidor de configuración con dos replica set
+  * 3 servidores sharding cada uno con su replica set
+  
 ## Instrucciones:
 
-1. Para iniciar todos los contenedores ejecutar el siguiente comando:
+### 1. Para iniciar todos los contenedores ejecutar el siguiente comando:
 
 ```
 docker-compose up -d
 ```
 
-2. Ejecutar el siguiente archivo de configuración:
+### 2. Ejecutar el siguiente archivo de configuración:
 
 ```
 config.sh
 ```
 
-3. Ejecutar el siguiente archivo para convertir el CSV a JSON
+### 3. Ejecutar el siguiente archivo para convertir el CSV a JSON
 
 ```
 conversor.sh
 ```
 
-4. Ejecutar el siguiente archivo para copiar la base de datos a docker:
+### 4. Ejecutar el siguiente archivo para copiar la base de datos a docker:
 
 ```
 bd.sh
 ```
 
-5. En una terminal ejecutar los siguientes comandos para copiar la base de datos al cliente mongos:
+### 5. En una terminal ejecutar los siguientes comandos para copiar la base de datos al cliente mongos:
 
 ```
 docker exec -it projectnosql_mongos1_1 /bin/bash
@@ -38,7 +43,7 @@ exit
 
 ```
 
-6. Comprobación y consultas:
+### 6. Comprobación y consultas:
 
 ```
 docker exec -it projectnosql_mongos1_1 mongo
