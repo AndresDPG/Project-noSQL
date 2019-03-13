@@ -18,7 +18,7 @@ services:
     volumes:
       - ./scripts:/scripts
 
-  ## Servidores Sharding --noprealloc --smallfiles --oplogSize 16
+  ## Servidores Sharding
   shard01a:
     image: mongo
     command: mongod --port 27018 --shardsvr --replSet shard01
