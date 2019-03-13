@@ -6,6 +6,8 @@ Project noSQL
   * 1 servidor de configuración con dos replica set
   * 3 servidores sharding cada uno con su replica set
   
+En total el modelo se compone de 10 nodos (contenedores).
+
 ## Instrucciones:
 
 ### 1. Para iniciar todos los contenedores ejecutar el siguiente comando:
