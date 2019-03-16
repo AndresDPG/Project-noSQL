@@ -1,5 +1,19 @@
 # Project-noSQL
 Project noSQL
+## Modelo de base de datos
+
+```
+articles = {
+   Authors = "",
+   Author(s) ID = "",
+   Title = "",
+   Year = "",
+   Source title = "",
+   Link = "",
+   Abstract = "",
+   References = ""
+}
+```
 
 ## Arquitectura implementada en la base de datos:
   * 1 servidor mongos
