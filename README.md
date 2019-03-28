@@ -1,7 +1,37 @@
 # Project-noSQL
 Project noSQL
 ## Modelo de base de datos
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://example.org/> .
 
+ex:Book  rdf:type          rdf:Documenttype;
+         rdf:Source        "Scopus";
+		 rdf:Title         "tile value";
+		 rdf:Year          "year value";
+		 rdf:Link	       "<link value>";
+		 rdf:Abstract      "Abstract value";
+		 rdf:Authors        _:au;                          
+		 rdf:AuthorsID      _:auId;                  
+		 rdf:Sourcetitle    _:st;                    
+		 rdf:References     _:ref  .  
+		                
+_:au    rdf:_1   ex:AuthorName;
+		rdf:_2   ex:AuthorName;
+		rdf:type ex:List .
+
+_:auId  rdf:_1   ex:AuthorId;
+		rdf:_2   ex:AuthorId;
+		rdf:type ex:List .
+
+_:st    rdf:_1   ex:SourceTitle;
+		rdf:_2   ex:SourceTitle;
+		rdf:type ex:List .
+
+_:ref   rdf:_1   ex:Reference;
+		rdf:_2   ex:Reference;
+		rdf:type ex:List .
+```
 ```
 articles = {
    Authors = "",
