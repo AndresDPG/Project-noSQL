@@ -3,16 +3,19 @@ Project noSQL
 ## Modelo de base de datos
 
 ```
-articles = {
-   Authors = "",
-   Author(s) ID = "",
-   Title = "",
-   Year = "",
-   Source title = "",
-   Link = "",
-   Abstract = "",
-   References = ""
+books = {
+   “Authors” = [author1, author2, authorN],
+   “AuthorsID” = [authorId1, authorId2, authorIdN],
+   “Title” = “title”,
+   “Year” = “xxxx”,
+   “Source title” = [sourcetitle1, sourcetitle2, sourcetitleN],
+   “Link” = <http://milink.com>,
+   “Abstract” = "abstract",
+   “References” = [reference1, reference1, referenceN],
+   “Document Type” = “type”,
+   “Source” = “Scopus”
 }
+
 ```
 
 ## Arquitectura implementada en la base de datos:
